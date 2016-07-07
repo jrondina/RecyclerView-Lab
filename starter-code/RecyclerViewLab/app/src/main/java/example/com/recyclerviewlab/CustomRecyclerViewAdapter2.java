@@ -11,11 +11,11 @@ import java.util.List;
 /**
  * Created by jamesrondina on 7/5/16.
  */
-public class CustomRecyclerViewAdapter extends RecyclerView.Adapter<CustomViewHolder> {
+public class CustomRecyclerViewAdapter2 extends RecyclerView.Adapter<CustomViewHolder> {
 
     List<CustomObject> mCustomObjectsList;
 
-    public CustomRecyclerViewAdapter(final List<CustomObject> customObjectList) {
+    public CustomRecyclerViewAdapter2(final List<CustomObject> customObjectList) {
         mCustomObjectsList = customObjectList;
     }
 
@@ -27,11 +27,12 @@ public class CustomRecyclerViewAdapter extends RecyclerView.Adapter<CustomViewHo
     }
 
     @Override
-    public void onBindViewHolder(CustomViewHolder holder, int position) {
+    public void onBindViewHolder(CustomViewHolder2 holder, int position) {
         final CustomObject customObject = mCustomObjectsList.get(position);
         holder.mTextView1.setText(customObject.getTitleText());
         holder.mTextView2.setText(customObject.getDescriptionText());
         holder.mSquare.setText(customObject.getColorText());
+        holder.mCheckBox.setChecked(customObject.isChecked);
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override

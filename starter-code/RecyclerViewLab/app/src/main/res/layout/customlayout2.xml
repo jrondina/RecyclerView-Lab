@@ -43,6 +43,7 @@
         android:layout_above="@id/text2_2"
         android:paddingRight="20dp"
         android:layout_marginTop="20dp"
+        android:id="@+id/checkbox"
         />
 
 

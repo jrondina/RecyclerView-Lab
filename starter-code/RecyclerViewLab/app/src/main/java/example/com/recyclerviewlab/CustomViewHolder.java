@@ -23,27 +23,4 @@ public class CustomViewHolder extends RecyclerView.ViewHolder {
         mTextView2 = (TextView) itemView.findViewById(R.id.text2);
     }
 
-    public TextView getmSquare() {
-        return mSquare;
-    }
-
-    public void setmSquare(TextView mSquare) {
-        this.mSquare = mSquare;
-    }
-
-    public TextView getmTextView1() {
-        return mTextView1;
-    }
-
-    public void setmTextView1(TextView mTextView1) {
-        this.mTextView1 = mTextView1;
-    }
-
-    public TextView getmTextView2() {
-        return mTextView2;
-    }
-
-    public void setmTextView2(TextView mTextView2) {
-        this.mTextView2 = mTextView2;
-    }
 }
